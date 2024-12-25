@@ -161,13 +161,74 @@ class MyApp extends StatelessWidget {
                 
                   ],
                 ),
+              ),
+
+              //3rd scrren
+              Center(child: Image.asset(
+                "assets/space3.png",
+                height: 250,
+                scale: 2,
+                )
+                ),
+
+              SizedBox(
+                height: 50,
+              ),
+
+              Text("A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from it. This intense gravitational pull is caused by the collapse of a massive star at the end of its life cycle. Black holes are invisible, but their presence can be detected by the effects they have on nearby matter and light. They come in different sizes, from small stellar black holes formed by dying stars to supermassive black holes found at the centers of galaxiesThey come in different sizes, from small stellar black holes formed by dying stars to supermassive black holes found at the centers of galaxies.",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w300
+              ),
+              ),
+
+              SizedBox(
+                height: 20,
+              ),
+
+              GestureDetector(
+                  onTap: () {},
+                  child: Center(
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius:BorderRadius.circular(100),
+                        color: Colors.red
+                       ),
+                      child: Text("Space details",style:TextStyle(color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                SizedBox(
+                height: 20,
+              ),
+
+              Container(
+                height: 3,
+                width: 500,
+                decoration: BoxDecoration(
+                   color: Colors.white
+                ),
               )
 
 
+
+
+
               ],
+
+              //3rd screen
+              
             ),
+
+           
+
           ),
+           
         )
+        
       ),
     );
   }
